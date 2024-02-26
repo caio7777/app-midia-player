@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="img\music-player-fill.svg" type="image/x-icon">
+</head>
+<body>
+    <input title="input-list" type="checkbox" name="" id="check-">
+    <label id="" class="bi bi-music-note-list" for="check-"></label>
+    <div id="content_list_music"> 
+    </div>
+    <div id="container-app">
+        <img id="img-player" src="" alt="">
+        <p id="music-name"></p>      
+        <div id="conten-button">
+            <button onclick="back_track()" style="background: none;" title="back" type="button" class="bi bi-skip-backward-fill"></button>
+            <button id="play" onclick="audio.play()" style="background: none;" title="play-and-pause" type="button" class=" bi-play-circle-fill"></button>
+            <button id="pause" onclick="audio.pause()" style="background: none;" title="next" type="button" class="bi bi-pause"></button>
+            <button onclick="next_track()" style="background: none;" title="next" type="button" class="bi bi-skip-forward-fill"></button>
+        </div>
+        <input title="input-form"  style="width: 80%;" type="range" min="0" value="0" id="linhaDoTempo">
+    </div>
+<form action="http://localhost:8080/addMusic" method="post" enctype="multipart/form-data">
+  Selecione a música para fazer upload:
+  <input required class="input-file" type="file" id="myFile" name="file">
+  <input required class="input-file" type="submit">
+</form>
+</body>
+<script type="text/javascript" src="script.js" defer></script>
+</html>

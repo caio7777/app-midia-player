@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-image: url(./img/bacground-player.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 35%;
+    min-width: 210px;
+    height: 200px;
+    border-radius: 10%;
+    box-shadow: 10px 15px 30px white;
+  
+}
+
+p {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+button {
+    margin: 20px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+
+}
+
+#conten-button {
+    display: flex;
+    margin: 20px;
+}
+
+label {
+    background: none;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 30px;
+}
+
+#pause {
+    display: none;
+}
+
+input[type='checkbox'] {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#content_list_music {
+    position: absolute;
+    top: 65px;
+    left: 0; 
+    height: 91vh;
+    transform: translate(-305px);
+    transition: all 2s;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+#content_list_music::-webkit-scrollbar {
+    display: none; /* Oculta o scrollbar */
+}
+
+
+#music_element {
+    font-size: 15px;
+    color: black;
+    padding-left: 20px;
+
+}
+
+.element-list {
+    font-size: 15px;
+    color: black;
+    padding-left: 20px;
+    display: list-item;
+    list-style-type: decimal;
+    border: solid 1px blueviolet;
+    margin: 10px;
+    box-shadow: 3px 3px 5px;
+    text-shadow: 3px 3px 5px black;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#upload {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+@media screen and (max-width:360px) or (max-width:560px) {
+    #music-name {
+        font-size: 10px;
+    }
+
+    .element-list {
+        font-size: 7px;
+        color: black;
+        padding-left: 20px;
+        display: list-item;
+        list-style-type: decimal;
+        border: solid 1px blueviolet;
+        margin: 10px;
+        box-shadow: 3px 3px 5px;
+        text-shadow: 3px 3px 5px black;
+        padding: 5px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+}
+
+form { 
+    bottom: 100px;
+    right:40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.input-file{
+    margin: 5px;
+    
+}
